@@ -10,3 +10,6 @@ echo "Starting RKE2 service, you can run \"journalctl -u rke2-server -f\" on ano
 
 # Start the service
 systemctl start rke2-server.service
+
+# printing the token
+cat /var/lib/rancher/rke2/server/node-token
