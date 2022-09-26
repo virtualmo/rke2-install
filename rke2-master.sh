@@ -13,3 +13,6 @@ systemctl start rke2-server.service
 
 # printing the token
 cat /var/lib/rancher/rke2/server/node-token
+
+# kubectl config dir
+echo "kubectl config file available at: /etc/rancher/rke2/rke2.yaml"
