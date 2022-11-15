@@ -28,6 +28,8 @@ sudo ./rke2-worker.sh <SERVER_IP> <NODE_TOKEN>
 ### Install Rancher (Master Node)
 ```
 sudo cp /etc/rancher/rke2/rke2.yaml kube_config_cluster.yml
+mkdir .kube
+sudo cp /etc/rancher/rke2/rke2.yaml .kube/config
 sudo chown $USER kube_config_cluster.yml
 wget https://raw.githubusercontent.com/axeal/tf-do-rke/master/rancher-install.sh
 chmod +x rancher-install.sh
